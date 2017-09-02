@@ -12,3 +12,5 @@ invoke
 pep8
 
 bumpversion
+
+django
