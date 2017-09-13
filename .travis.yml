@@ -1,0 +1,11 @@
+language: python
+python:
+  - "3.6"
+before_install:
+  - sudo apt-get update -yq
+  - sudo apt-get install libenchant-dev -yq
+install:
+  - pip install .
+  - pip install  --no-cache-dir -r requirements/dev.txt
+# command to run tests
+script: invoke check
