@@ -1,10 +1,13 @@
 # coding=utf-8
+
+# pylint: disable=redefined-outer-name,missing-docstring,unused-argument,no-self-use
+
 import typing
 
 
 class MockToken(object):
 
-  def __init__(self, tokens: typing.Sequence, name: str="tag"):
+  def __init__(self, tokens: typing.Sequence, name: str = "tag"):
     self.tokens = [name] + list(tokens)
 
   def split_contents(self):

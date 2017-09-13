@@ -1,0 +1,3 @@
+# NOTE :
+# django is missing here by design, we assume all project will use some version of django no need
+# to shadow it. We also use

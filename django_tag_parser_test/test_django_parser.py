@@ -1,5 +1,7 @@
 # coding=utf-8
 
+# pylint: disable=redefined-outer-name,missing-docstring
+
 import pytest
 from django.template.exceptions import TemplateSyntaxError
 
@@ -45,3 +47,8 @@ def test_duplicate(example_parser: TagParser):
 def test_too_many_positional(example_parser: TagParser):
   with pytest.raises(TemplateSyntaxError):
     example_parser.parse(MockParser(), MockToken(["1", "2", "3"]))
+
+
+def test_unknown_tag(example_parser: TagParser):
+  with pytest.raises(TemplateSyntaxError):
+    example_parser.parse(MockParser(), MockToken(["1", "bar=2", "bazbar=3"])).resolve({})
