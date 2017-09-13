@@ -45,7 +45,7 @@ if __name__ == "__main__":
 
   setup(
     name='simple-django-tag-parser',
-    version='0.1.0',
+    version='0.1.1',
     packages=packages,
     license='All Rights reserved',
     author='Jacek Bzdak',
