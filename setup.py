@@ -44,19 +44,12 @@ def read_dir(package: str, directory: str):
 if __name__ == "__main__":
 
   setup(
-    name='django_tag_parser',
+    name='simple-django-tag-parser',
     version='0.1.0',
     packages=packages,
     license='All Rights reserved',
     author='Jacek Bzdak',
     author_email='jacek@askesis.pl',
     description='A short description of the project',
-    install_requires=[str(req.req) for req in get_requirements()],
-    package_data={
-      package: [] +
-        read_dir(package, "static") +
-        read_dir(package, "templates")
-      for package in packages
-    },
     include_package_data=True
   )
