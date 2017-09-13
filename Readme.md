@@ -6,6 +6,9 @@ you want to parse following tag:
 
 Keyword arguments (in this example) are optional. 
 
+To install: 
+   
+    pip install simple-django-tag-parser
 
 Usage:
 
@@ -39,4 +42,4 @@ Requirements:
 
 * Recent Django (Tested with 1.11)
 * Python ``3.5+`` (parameter annotations are used)
-
+2
