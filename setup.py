@@ -3,18 +3,9 @@
 from setuptools import find_packages, setup
 import pathlib
 import os
-from pip.req import parse_requirements
-from pip.download import PipSession
 
 MAIN_DIR = pathlib.Path(__file__).absolute().parent
 
-
-def get_requirements():
-  pip_session = PipSession()
-  return parse_requirements(
-      str(MAIN_DIR / 'requirements' / 'base.txt'),
-      session=pip_session
-  )
 
 packages = find_packages(
   str(MAIN_DIR),
