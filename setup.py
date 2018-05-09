@@ -40,6 +40,6 @@ if __name__ == "__main__":
     license='All Rights reserved',
     author='Jacek Bzdak',
     author_email='jacek@askesis.pl',
-    description='A short description of the project',
+    description='Simple helper to make developing new django tags easier.',
     include_package_data=True
   )
