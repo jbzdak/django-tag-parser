@@ -37,7 +37,7 @@ if __name__ == "__main__":
     name='simple-django-tag-parser',
     version='0.2.0',
     packages=packages,
-    license='All Rights reserved',
+    license='MIT',
     author='Jacek Bzdak',
     author_email='jacek@askesis.pl',
     description='Simple helper to make developing new django tags easier.',
