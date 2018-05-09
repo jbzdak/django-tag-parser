@@ -6,7 +6,6 @@ import os
 
 MAIN_DIR = pathlib.Path(__file__).absolute().parent
 
-
 packages = find_packages(
   str(MAIN_DIR),
   include=('django_tag_parser*',),

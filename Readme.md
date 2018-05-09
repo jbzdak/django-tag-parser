@@ -23,7 +23,7 @@ Usage:
 
         return PageNode(parser_parse.parse(parser, token))
 
-    class PageNode(template.None):
+    class PageNode(template.Node):
       
       def __init__(self, parsed_args):
         super().__init__()
@@ -32,8 +32,8 @@ Usage:
 
       def render(self, context):
         arguments = self.parsed_args.resolve(context) 
-        language = resolved.get('language', None)
-        block_type = resolved['block_type']
+        language = arguments.get('language', None)
+        block_type = arguments['block_type']
         # ...
         return template.render(ctx)
 
@@ -42,4 +42,4 @@ Requirements:
 
 * Recent Django (Tested with 1.11)
 * Python ``3.5+`` (parameter annotations are used)
-2
+
